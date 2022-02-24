@@ -13,7 +13,7 @@ from app.serializers import TodoSerializer
 
 
 class TodoViewSet(viewsets.ModelViewSet):
-    queryset = todo.objects.all()
+    queryset = Todo.objects.all()
     serializer_class = TodoSerializer
 
 # class TodoListandCreate(generics.ListCreateAPIView):
